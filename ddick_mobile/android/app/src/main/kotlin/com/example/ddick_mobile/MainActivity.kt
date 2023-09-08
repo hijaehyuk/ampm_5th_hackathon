@@ -1,0 +1,6 @@
+package com.example.ddick_mobile
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
