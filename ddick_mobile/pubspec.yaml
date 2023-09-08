@@ -28,10 +28,11 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  mongo_dart: ^0.9.1
+  openai: ^1.0.0
+  http: ^0.13.5
+  mongo_dart: any
   qr_flutter: ^4.1.0
   get: ^4.6.5
-  kakao_map_plugin: ^0.1.6
   flutter_dotenv: ^5.1.0
   bson: any
   flutter:
