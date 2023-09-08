@@ -24,7 +24,7 @@ class _ChatMenuRecommendationState extends State<ChatMenuRecommendation> {
   bool isTyping = false; // 타자기가 보이는지 여부를 나타내는 변수
 
   Future<String> generateText(String prompt) async {
-    final apiKey = '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';
+    final apiKey = 'MY API_KEY';
     final endpoint = 'https://api.openai.com/v1/chat/completions';
     final cp949Decoder = Encoding.getByName('cp949');
 
@@ -91,13 +91,6 @@ class _ChatMenuRecommendationState extends State<ChatMenuRecommendation> {
     });
   }
 
-  void _navigateToCartPage() {
-    // 장바구니 페이지로 이동하는 코드 추가
-    // 예를 들어, Navigator를 사용하여 이동할 수 있습니다.
-    // Navigator.push(context, MaterialPageRoute(builder: (context) => CartPage()));
-    // CartPage는 장바구니 페이지로 대체해야 합니다.
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -114,7 +107,7 @@ class _ChatMenuRecommendationState extends State<ChatMenuRecommendation> {
                   Get.to(() => CartScreen());
                 }, // 장바구니 페이지로 이동
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xFFB04F4F),
+                      backgroundColor: Color.fromARGB(255, 144, 254, 0),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
